@@ -2,7 +2,7 @@
 automationName = "uiautomator2"
 platformName = "android"
 deviceName = "Nexus 5"
-app = "../app/app-debug.apk"
+app = "E:/Projetos/Ruby-Mobile/app/app-debug.apk"
 appPackage = "qaninja.com.pixel"
 appActivity = "qaninja.com.pixel.SplashScreen"
 some_capability = "some_capability"
