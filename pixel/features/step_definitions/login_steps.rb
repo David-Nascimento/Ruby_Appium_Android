@@ -11,7 +11,7 @@ Quando('logo sem sucesso {int} vezes') do |tentativas|
     steps %{
       Quando eu faco login com "tony@stark.com" e "pwd123"
   }
-    popup = @screen.login.popup
+    popup = @screen.popup
     expect(popup.displayed?).to be true
     back
   end
@@ -30,6 +30,6 @@ Entao('posso ver a tela minha conta') do
 end
 
 Entao('devo ver {string} com popup') do |mensagem_esperada|
-  popup = @screen.login.popup
+  popup = @screen.popup
   expect(popup.text).to eql mensagem_esperada
 end

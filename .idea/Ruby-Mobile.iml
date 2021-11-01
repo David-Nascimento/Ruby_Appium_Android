@@ -33,10 +33,12 @@
     <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.2.7, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faye-websocket (v0.11.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.4, ruby-2.5.7-p206) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.20.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.3.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2021.0901, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, ruby-2.5.7-p206) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.12.5, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="numerizer (v0.1.1, ruby-2.5.7-p206) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.13.1, ruby-2.5.7-p206) [gem]" level="application" />

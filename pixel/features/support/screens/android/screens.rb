@@ -4,11 +4,6 @@ class Login
     find_element(id: "qaninja.com.pixel:id/passwordTxt").send_keys(password)
     find_element(id: "qaninja.com.pixel:id/loginButt").click
   end
-
-  def popup
-    find_element(id: "android:id/message")
-  end
-
 end
 
 class Home
@@ -17,8 +12,26 @@ class Home
   end
 end
 
-class MyAccout
+class MyAccount
   def view
     find_element(id: "qaninja.com.pixel:id/account")
   end
 end
+
+
+class Product
+  def go_to(product)
+    find_elements(id: "qaninja.com.pixel:id/cpProdNameTxt").text(product).click
+  end
+
+  def add_to_cart
+    find_element(id: "qaninja.com.pixel:id/pdAddToCartButt").click
+  end
+end
+
+class ProductList
+  def select(product)
+    find_elements(id: "qaninja.com.pixel:id/cCatNameTxt").text(product.upcase!).click
+  end
+end
+

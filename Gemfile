@@ -5,3 +5,4 @@ gem 'appium_lib'
 gem "cucumber"
 gem "pry"
 gem "rspec"
+gem "httparty"
