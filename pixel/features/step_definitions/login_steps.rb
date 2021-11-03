@@ -2,8 +2,8 @@ Dado('que acesso a tela de login') do
   @screen.home.go_account
 end
 
-Quando('eu faco login com {string} e {string}') do |_email, _pass|
-  @screen.login.with(_email, _pass)
+Quando('eu faco login com {string} e {string}') do |email, pass|
+  @screen.login.with(email, pass)
 end
 
 Quando('logo sem sucesso {int} vezes') do |tentativas|

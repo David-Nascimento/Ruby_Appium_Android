@@ -4,7 +4,7 @@ Funcionalidade: Login
   Sendo um usuario cadastrado
   Posso se autenticar pela telade login
 
-  @login
+  @login_happy
   Cenario: Usuario logado
     Dado que acesso a tela de login
     Quando eu faco login com "tony@stark.com" e "pass123"

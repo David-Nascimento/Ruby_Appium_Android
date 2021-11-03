@@ -1,3 +1,6 @@
+require "report_builder"
+require "date"
+
 Before do
   driver.start_driver
   driver.manage.timeouts.implicit_wait = 10
@@ -19,7 +22,26 @@ Before("@clean_cart") do
 end
 
 After do
-  #screenshot = driver.screenshot_as(:base64)
-  #embed(screenshot, "image/png", "Screenshot")
+  # encoded_img = driver.screenshot_as(:base64)
+  # embed(encoded_img, "image/png", "Screenshot")
+
   driver.quit_driver
+end
+
+at_exit do
+  @info = {
+     'device' => "Android", 
+     "enviromment" => "QA", 
+     "Data do Teste" => "#{DateTime.now}"
+    }
+
+  ReportBuilder.configure do |config|
+    config.report_title = "Pixel Mobile"
+    config.input_path = "logs/report.json"
+    config.report_path = "logs/report"
+    config.report_types = [:html]
+    config.color = "indigo"
+    config.additional_info = @info
+  end
+  ReportBuilder.build_report
 end

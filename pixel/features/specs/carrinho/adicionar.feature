@@ -1,6 +1,5 @@
 #language: pt
 
-
 Funcionalidade: Adicionar item ao carrinho
     Para que eu possa comprar jogos classicos na loja
     Sendo um usuario cadastrado
