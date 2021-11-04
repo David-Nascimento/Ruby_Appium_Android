@@ -7,8 +7,34 @@ class Login
 end
 
 class Home
+  attr_reader :menu
+
+  def initialize
+    @menu = "qaninja.com.pixel:id/ibnt_icon_iv"
+  end
+
+  def go_back
+    find_element(accessibility_id: "Navegar para cima").click
+  end
+
   def go_account
     find_element(id: "qaninja.com.pixel:id/accountButt").click
+  end
+
+  def go_to_home
+    find_elements(id: @menu)[0].click
+  end
+
+  def go_to_wish
+    find_elements(id: @menu)[1].click
+  end
+
+  def go_to_cart
+    find_elements(id: @menu)[2].click
+  end
+
+  def go_to_contact
+    find_elements(id: @menu)[3].click
   end
 end
 
@@ -17,7 +43,6 @@ class MyAccount
     find_element(id: "qaninja.com.pixel:id/account")
   end
 end
-
 
 class Product
   def go_to(product)
@@ -35,3 +60,12 @@ class ProductList
   end
 end
 
+class Cart
+  def refresh
+    find_element(id: "qaninja.com.pixel:id/refreshButt").click
+  end
+
+  def checkout
+    find_element(id: "qaninja.com.pixel:id/cartCheckoutButt").click
+  end
+end

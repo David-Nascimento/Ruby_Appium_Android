@@ -60,14 +60,32 @@
 
     
         
-            <div class="chip"><i class="material-icons rotate-45">label</i>@login_happy</div>
+            <div class="chip"><i class="material-icons rotate-45">label</i>@login</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@clean_cart</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@checkout</div>
         
     
 
-    <h5>Usuario logado (22.724s)</h5>
-    features/specs/auth/login.feature:8
+    <h5>Pagar com PayPal (44.136s)</h5>
+    features/specs/checkout/comprar.feature:9
 
     
+        
+            
+
+
+
+
+
+        
+            
+
+
+
+
+
         
             
 
@@ -83,10 +101,26 @@
           <li class="collection-item step passed">
   
 
-  <b>Dado </b> que acesso a tela de login (6.208s)
+  <b>Dado </b> que eu adicionei os seguintes itens no meu carrinho: (9.336s)
 
   
 
+  
+      
+          <br/>| 
+          
+              categoria | 
+          
+              produto | 
+          
+      
+          <br/>| 
+          
+              SUPER NINTENDO | 
+          
+              F-Zero | 
+          
+      
   
 
   
@@ -105,10 +139,26 @@
           <li class="collection-item step passed">
   
 
-  <b>Quando </b> eu faco login com &quot;tony@stark.com&quot; e &quot;pass123&quot; (3.510s)
+  <b>Quando </b> eu finalizo a minha compra com a conta: (1.842s)
 
   
 
+  
+      
+          <br/>| 
+          
+              email | 
+          
+              test@qaninja.io | 
+          
+      
+          <br/>| 
+          
+              senha | 
+          
+              qaninja123456 | 
+          
+      
   
 
   
@@ -127,7 +177,7 @@
           <li class="collection-item step passed">
   
 
-  <b>Entao </b> posso ver a tela minha conta (3.525s)
+  <b>Entao </b> devo ver o alerta: &quot;Você pagou seu pedido atravez do PayPal! Entregaremos sua encomenda o mais rápido possível!&quot; (10.000s)
 
   
 
@@ -201,7 +251,7 @@
   <div class="col m4 s12">
     <table id="metaData" class="bordered">
       <tbody>
-      <tr><th>Total Time</th><td>22.724s</td></tr>
+      <tr><th>Total Time</th><td>44.136s</td></tr>
       
           <tr>
             <th>device</th>
@@ -215,7 +265,7 @@
       
           <tr>
             <th>Data do Teste</th>
-            <td>2021-11-03T11:50:49-03:00</td>
+            <td>2021-11-03T23:30:24-03:00</td>
           </tr>
       
       </tbody>
@@ -232,14 +282,14 @@
       <li class="feature working">
   <div class="collapsible-header indigo lighten-1 waves-effect waves-light">
     <i class="material-icons">featured_play_list</i>
-    <b>Funcionalidade</b>&nbsp;Login&nbsp;(22.724s)
+    <b>Funcionalidade</b>&nbsp;Finalizar Comprar&nbsp;(44.136s)
   </div>
 
   <div class="collapsible-body indigo lighten-4">
     <div class="collection scenarioList indigo">
       
         <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s0">
-          <b>Cenario</b> Usuario logado&nbsp;(22.724s)
+          <b>Cenario</b> Pagar com PayPal&nbsp;(44.136s)
         </a>
       
     </div>
@@ -272,17 +322,21 @@
           
           <tr class="passed">
             <td class="hide-on-small-only">
-  Login
+  Finalizar Comprar
 </td>
 
 <td class="hoverable modal-trigger white-text" data-target="g0f0s0">
-  Usuario logado
+  Pagar com PayPal
 </td>
 
 <td class="hide">
   
       
-          @login_happy. 
+          @login. 
+      
+          @clean_cart. 
+      
+          @checkout. 
       
   
 </td>

@@ -12,8 +12,8 @@ class PixelApi
     self.class.get("/cart/#{user_id}")
   end
 
-  def delete_cart(cart_id)
-    self.class.delete("/cart/#{cart_id}")
+  def delete_item(item_id)
+    self.class.delete("/cart/#{item_id}")
   end
 
   def remove_my_cart(email)
@@ -21,7 +21,8 @@ class PixelApi
     user_id = user.parsed_response["objectId"]
     cart = get_cart(user_id)
     cart_list = cart.parsed_response["results"]
-    delete_cart(cart_list.first["objectId"]) if cart_list.size > 0
+    # delete_cart(cart_list.first["objectId"]) if cart_list.size > 0
+    cart_list.each { |item| delete_item(item["objectId"]) }
   end
 end
 

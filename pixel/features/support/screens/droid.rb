@@ -1,7 +1,7 @@
 require_relative 'android/screens'
 
 class DroidScreens
-  attr_accessor :home, :login, :my_account, :product, :product_list
+  attr_accessor :home, :login, :my_account, :product, :product_list, :cart
 
   def initialize
     @home = Home.new
@@ -9,6 +9,7 @@ class DroidScreens
     @my_account = MyAccount.new
     @product_list = ProductList.new
     @product = Product.new
+    @cart = Cart.new
   end
 
   def popup
