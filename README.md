@@ -1,5 +1,5 @@
 "# Ruby_Appium" 
 
-Dado pré-condição
-Quando ação
+Dado pré-condição \
+Quando ação \
 Então espectativa
