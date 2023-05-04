@@ -1,0 +1,3 @@
+---
+default: -p bdd
+bdd: --format pretty
